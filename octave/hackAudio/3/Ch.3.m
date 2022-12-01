@@ -68,13 +68,13 @@
 ##
 ##
 ## Example 3.8 - Time-reversing a vocal recording
-##fn = '/home/danny/Code/Octave/Hack_Audio/Ch.3/Vocal.wav'
+fn = '/home/danny/Code/Octave/Hack_Audio/Ch.3/Vocal.wav'
 ##fn = '/home/danny/octave/Hack_Audio/Ch.3/04.Waterfall.mp3'
-##[x,Fs] = audioread(fn);
-##plot(x);
-##xReverse = x(end:-1:1);
-##sound(xReverse,Fs);
-##plot(xReverse);
+[x,Fs] = audioread(fn);
+plot(x);
+xReverse = x(end:-1:1);
+sound(xReverse,Fs);
+plot(xReverse);
 ##
 ##
 ##
@@ -142,15 +142,15 @@
 ##
 ##
 #### Example 3.15 - Plotting audio signals
-fn = '/home/danny/code/octave/hackAudio/3/sw20Hz.wav'
-[sw,Fs] = audioread(fn);
-figure(1)
-plot(sw);
-xlabel('Sample Number');
-axis([0 45000 -1.5 1.5]);
-Ts = 1/Fs;
-t = 0:Ts:1;
-figure(2)
-plot(t,sw);
-xlabel('Time (sec.)');
-axis([0 1.1 -1.5 1.5]);
+##fn = '/home/danny/Code/Octave/Hack_Audio/Ch.3/sw20Hz.wav'
+##[sw,Fs] = audioread(fn);
+##figure(1)
+##plot(sw);
+##xlabel('Sample Number');
+##axis([0 45000 -1.5 1.5]);
+##Ts = 1/Fs;
+##t = 0:Ts:1;
+##figure(2)
+##plot(t,sw);
+##xlabel('Time (sec.)');
+##axis([0 1.1 -1.5 1.5]);
