@@ -39,3 +39,24 @@ def collectSongs():
     print(country)
 
 collectSongs()
+
+
+#------------------------------------------------#
+#            Functional Programming              #
+#------------------------------------------------#
+
+# "...is characterized by one thing: the abscence of
+# side effects. It doesn't change or rely on data
+# from outside the current function."
+
+# A function with side effects:
+a = 0
+
+def increment():
+    global a
+    a += 1
+ 
+ # A function with no side effects:
+
+def increment(a):
+    return a + 1
