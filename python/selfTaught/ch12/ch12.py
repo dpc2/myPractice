@@ -39,6 +39,7 @@ def collectSongs():
     print(country)
 
 collectSongs()
+print('\n')
 
 
 #------------------------------------------------#
@@ -60,3 +61,66 @@ def increment():
 
 def increment(a):
     return a + 1
+
+
+#------------------------------------------------#
+#             Objective Programming              #
+#------------------------------------------------#
+
+class Orange:
+    # __init__ executes when you create an Orange object
+    # Two instance variables are created
+    def __init__(self, w, c):
+        """weights are in oz"""
+        self.weight = w
+        self.color = c
+        self.mold = 0
+        print("Created!")
+
+    def rot(self, days, temp):
+        self.mold = days * temp
+
+orange1 = Orange(10, "blood orange")
+orange2 = Orange(8, 'dark orange')
+orange3 = Orange(14, 'yellow')
+print('\n')
+
+print('orange1: {}'.format(orange1))
+print('orange1 weight: {}'.format(orange1.weight))
+print('orange1 color: {}'.format(orange1.color))
+print('\n')
+
+# Reassigning object/instance variables
+orange1.weight = 100
+orange1.color = 'light orange'
+print(orange1.weight)
+print(orange1.color)
+print('\n')
+
+# Using rot function
+newOrange = Orange(6, 'orange')
+print(newOrange.mold)
+newOrange.rot(10, 98)
+print(newOrange.mold)
+print('\n')
+
+
+# Example 2
+class Rectangle():
+    def __init__(self, w, l):
+        self.width = w
+        self.len = l
+
+    def area(self):
+        return self.width * self.len
+
+    def change_size(self, w, l):
+        self.width = w
+        self.len = l
+
+myRectangle = Rectangle(5, 4)
+print('myRectangle: {} by {}\nArea: {}'.format(
+    myRectangle.width, myRectangle.len, myRectangle.area()))
+print(myRectangle.change_size(16, 9))
+print('myRectangle: {} by {}\nArea: {}'.format(
+    myRectangle.width, myRectangle.len, myRectangle.area()))
