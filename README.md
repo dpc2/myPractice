@@ -10,5 +10,5 @@ with various tutorials and textbooks.</p>
 		<li>Chapter 10 - Text based Hangman game</li>
 		</ul>
 	<li>Problem Solving with Algorithms and Data Structures - Brad Miller/David Ranum</li>
-	<li>Advent of Code</li>
+	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
 	</ul>
