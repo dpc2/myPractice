@@ -4,6 +4,7 @@
 
 from random import shuffle
 
+
 class Card:
 
     # index 0: spades, 1: hearts,
@@ -78,7 +79,7 @@ class Game:
         self.p2 = Player(name2)
 
     def wins(self, winner):
-        w = '{} wins this round'
+        w = '{} wins this round\n'
         w = w.format(winner)
         print(w)
     
@@ -115,15 +116,15 @@ class Game:
             
         win = self.winner(self.p1, self.p2)
 
-        print('War is over, {} wins'.format(win))
+        print('War is over, {}'.format(win))
 
     def winner(self, p1, p2):
         print('Player 1 wins: {}\nPlayer 2 wins: {}'.format
                 (p1.wins, p2.wins))
         if p1.wins > p2.wins:
-            return p1.name
+            return p1.name + ' wins!'
         if p1.wins < p2.wins:
-            return p2.name
+            return p2.name + ' wins!'
         return "It was a tie!"
 
 
