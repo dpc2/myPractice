@@ -7,7 +7,8 @@ with various tutorials and textbooks.</p>
 	<ul>
 	<li>The Self Taught Programmer - Cory Althoff</li>
 		<ul>
-		<li>Chapter 10 - Text based Hangman game</li>
+		<li>Chapter 10 - Software Hangman game</li>
+		<li>Chapter 15 - War card game</li>
 		</ul>
 	<li>Problem Solving with Algorithms and Data Structures - Brad Miller/David Ranum</li>
 	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
