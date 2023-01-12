@@ -57,6 +57,7 @@ print(myStack.is_empty())
 print('\n')
 
 
+
 # Reversing a string with a stack
 
 myMessage = "Hello, World!"
@@ -66,11 +67,16 @@ for chars in myMessage:
 
 reverse = ""
 
+print(range(len(myStack.items)))
+
+# for i in range(0,13):
 for i in range(len(myStack.items)):
+    print(myStack.items)
     reverse += myStack.pop()
 
 print(reverse)
 print('\n')
+
 
 
 #------------------------------------------------#
@@ -88,6 +94,7 @@ class myQueue:
         return self.items == []
 
     def enqueue(self, item):
+        # insert each new item into the 0th index (leftmost)
         self.items.insert(0, item)
     
     def dequeue(self):
@@ -102,17 +109,19 @@ class myQueue:
 
         for i in range(100):
             pq.enqueue("person" + str(i))
-            t_end = time.time() + till_show
-            now = time.time()
-            while now < t_end and not pq.is_empty():
-                now = time.time()
-                r = random.randint(0, max_time)
-                time.sleep(r)
-                person = pq.dequeue()
-                print(person)
-                tix_sold.append(person)
 
-            return tix_sold
+        t_end = time.time() + till_show
+        now = time.time()
+
+        while now < t_end and not pq.is_empty():
+            now = time.time()
+            r = random.randint(0, max_time)
+            time.sleep(r)
+            person = pq.dequeue()
+            print(person)
+            tix_sold.append(person)
+
+        return tix_sold
 
     
 
@@ -120,17 +129,23 @@ queue = myQueue()
 print(queue.is_empty())
 
 for i in range(10):
-    queue.enqueue(1)
+    queue.enqueue(i)
 
 print(queue.size())
+print(queue.items)
 
 for i in range(10):
     print(queue.dequeue())
 
+print()
 print(queue.size())
+print()
 
 
-# Ticket queue
+
+#------------------------------------------------#
+#                   Ticket Cue                   #
+#------------------------------------------------#
 
 import time
 import random
