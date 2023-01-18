@@ -113,7 +113,7 @@ for word in word_list:
 print(letter_list)
 
 
-# Number 2:
+# Number 2: Need to come back to this
 word_list = ['cat', 'dog', 'rabbit']
-letter_list = [char for entry in word_list for char in entry]
+letter_list = [char for entry in word_list for char in entry if entry.count(char) == 1]
 print(letter_list)
