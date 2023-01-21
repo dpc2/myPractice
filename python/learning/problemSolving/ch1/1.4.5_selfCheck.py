@@ -4,7 +4,9 @@
 
 import random
 
+
 goal = "a long time ago in a galaxy far far away"
+
 
 def generate():
     newString = ""
@@ -47,6 +49,7 @@ def newCompare(goal, attempt):
             score += 1
             print(score)
             print('New random letter: {}'.format(tempLetter))
+            print()
 
             if tempLetter == letter:
                 tempString = newBest[:i] + tempLetter + newBest[i+1:len(newBest)]
