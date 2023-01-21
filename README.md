@@ -1,4 +1,4 @@
-<h1>Hello! This is my "sketchbook" repository</h1>
+<h1>My "sketchbook" repository</h1>
 <p>This is where I'll be keeping files created while I follow along 
 with various tutorials and textbooks.</p>
 <h2>Matlab/Octave</h2>
@@ -11,5 +11,11 @@ with various tutorials and textbooks.</p>
 		<li>Chapter 15 - War card game</li>
 		</ul>
 	<li>Problem Solving with Algorithms and Data Structures - Brad Miller/David Ranum</li>
+		<ul>
+		<li> Chapter 1:
+			<ul>
+			<li>"Locked room full of monkeys and typewriters" simulator</li>			
+			</ul>
+		</ul>
 	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
 	</ul>
