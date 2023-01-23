@@ -42,28 +42,40 @@ def turn(x, y):
         print()
 
 
-def handStatus(p1, p2):
-    print('Player 1 hand:\n')
+def handStatus(p1, n):
+    print('Player {} hand:\n'.format(n))
     for i in p1.hand:
         print(i)
-    print()
-    print('Player 2 hand:\n')
-    for j in p2.hand:
-        print(j)
     print()
 
 
 def checkHands(p1, p2):
     tempList = []
-    valueList = []
 
     for i in p1.hand:
-        print(i.value)
-        tempList.append(i.value)
+        #print(i.value)
+        tempList.append('{} of {}'.format
+        (i.value, i.suite))
+        if sum(i.value in s for s in tempList) >= 2:
+            layDown(p1, i.value)
+
+    #print(tempList)
     print()
 
-    for j in tempList:
-        print(tempList.count(j))
+
+def layDown(player, val):
+
+    tempList = []
+    print('Cards of same value found!\n{}'.format(val))
+    print()
+    handStatus(player, 1)
+
+    for i in player.hand:
+        if i.value == val:
+            tempList.append(i)
+            player.hand.remove(i)
+            player.table.append(tempList)
+    handStatus(player, 1)
     
                 
 
@@ -124,7 +136,8 @@ def myGame():
     handStatus(player1, player2)    
     
     turn(player1, player2)
-    #handStatus(player1, player2)
+    handStatus(player1, 1)
+    handStatus(player2, 2)
     checkHands(player1, player2)
 
 
