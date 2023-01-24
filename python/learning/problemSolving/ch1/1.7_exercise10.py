@@ -25,6 +25,7 @@ def turn(x, y):
     lucky = False
 
     # pick card in own hand
+    # ***Problematic***
     randomCard = x.hand[random.randrange(len(x.hand))]
     randomValue = randomCard.value
     print('Player {}: Do you have any {}s?'.format(x.name, randomValue))
@@ -39,43 +40,55 @@ def turn(x, y):
             break
     if lucky == False:
         print('Go fish!')
+        deal(x)
         print()
 
-
-def handStatus(p1, n):
-    print('Player {} hand:\n'.format(n))
-    for i in p1.hand:
-        print(i)
-    print()
 
 
 def checkHands(p1, p2):
     tempList = []
+    tempList2 = []
 
     for i in p1.hand:
         #print(i.value)
         tempList.append('{} of {}'.format
         (i.value, i.suite))
-        if sum(i.value in s for s in tempList) >= 2:
+        if sum(i.value in s for s in tempList) == 4:
             layDown(p1, i.value)
 
-    #print(tempList)
-    print()
+    for i in p2.hand:
+        #print(i.value)
+        tempList2.append('{} of {}'.format
+        (i.value, i.suite))
+        if sum(i.value in s for s in tempList2) == 4:
+            layDown(p2, i.value)
+
 
 
 def layDown(player, val):
 
     tempList = []
-    print('Cards of same value found!\n{}'.format(val))
+    print('Cards of same value found! {}'.format(val))
     print()
-    handStatus(player, 1)
+    print(player.hand)
 
     for i in player.hand:
         if i.value == val:
             tempList.append(i)
-            player.hand.remove(i)
-            player.table.append(tempList)
-    handStatus(player, 1)
+
+    for i in player.hand:
+        for i in player.hand:
+            for i in player.hand:
+                if i.value == val:
+                    player.hand.remove(i)
+
+    print(player.hand)
+    print()
+    player.table.append(tempList)
+    print(tempList)
+    print(player.table)
+
+
     
                 
 
@@ -88,6 +101,7 @@ class cards():
 
     def __str__(self):
         return ('{} of {}'.format(self.value, self.suite))
+    __repr__ = __str__
 
 
 class deck():
@@ -118,9 +132,14 @@ class player():
             print(i)
             myCount = self.hand.count(i.value)
             print(myCount)
+    
+    def __str__(self):
+        return('Player name: {}\nCurrent hand: {}\nOn the table: {}'.
+        format(self.name, str(self.hand), self.table))
+
+
 
 gameDeck = deck()
-
 
 
 def myGame():
@@ -133,12 +152,25 @@ def myGame():
     for i in range(5):
         deal(player1)
         deal(player2)
-    handStatus(player1, player2)    
-    
-    turn(player1, player2)
-    handStatus(player1, 1)
-    handStatus(player2, 2)
-    checkHands(player1, player2)
 
+    print(player1.hand)
+    print(player2.hand)  
+    
+    while len(gameDeck.myDeck) != 0:
+        turn(player1, player2)
+        print(player1)
+        print(player2)
+        checkHands(player1, player2)
+        print()
+        swap = player1
+        player1 = player2
+        player2 = swap
+
+    print("Player {} has {} sets.".format(player1.name, len(player1.table)))
+    print("Player {} has {} sets.".format(player2.name, len(player2.table)))
+    print()
+    print(player1)
+    print(player2)
+    
 
 myGame()
