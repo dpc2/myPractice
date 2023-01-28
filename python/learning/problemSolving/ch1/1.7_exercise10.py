@@ -11,7 +11,6 @@ myValues = {'Ace': 1, '2': 2, '3': 3, '4': 4, '5': 5,
             'Jack': 11, 'Queen': 12, 'King': 13}
 
 
-
 def deal(p):
     p.hand.append(gameDeck.myDeck.pop())
 
