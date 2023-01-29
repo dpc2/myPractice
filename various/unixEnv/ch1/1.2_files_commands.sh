@@ -1,4 +1,6 @@
-# 1.2 - Day to day use: files and common commands
+#------------------------------------------------#
+#        1.2 - Files and Common Commands         #
+#------------------------------------------------#
 
 # Bash commands
 
@@ -53,5 +55,12 @@ sort -f     # Fold upper, lower case
 sort +n     # Sort starting at n+1
 
 
-# tail - prints last 10 lines
-tail -1 poem
+# tail - prints last 10 lines by default
+tail -3 poem
+
+# print start at line 3
+tail +3 poem
+
+
+# cmp - finds the first place where files differ
+cmp poem poen_new

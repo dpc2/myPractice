@@ -1,0 +1,11 @@
+1.2_files_commands.sh
+1.3_directories.sh
+1.4_theShell.sh
+fileList.txt
+loop.py
+myBook
+poem
+poem_new
+precious
+temp
+test.txt
