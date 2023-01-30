@@ -15,6 +15,7 @@ with various tutorials and textbooks.</p>
 		<li> Chapter 1:
 			<ul>
 			<li>"Locked room full of monkeys and typewriters" simulator</li>			
+			<li>Auto Go Fish game</li>
 			</ul>
 		</ul>
 	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
