@@ -20,3 +20,9 @@ with various tutorials and textbooks.</p>
 		</ul>
 	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
 	</ul>
+<h2>C++</h2>
+	<ul>AM2302 example code</ul>
+<h2>HTML, CSS, JavaScript</h2>
+	<ul>A Web Design Course - Laurence Svekis</ul>
+<h2>Various</h2>
+	<ul>The Unix Environment - Brian Kernighan and Rob Pike</ul>
