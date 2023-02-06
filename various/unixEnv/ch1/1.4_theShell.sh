@@ -90,3 +90,32 @@ ghi
 abc
 def
 ctl-D
+
+# If no arguments are passed, the standard input is processed
+
+
+
+#------------------------------------------------#
+#                      Pipes                     #
+#------------------------------------------------#
+
+# Instead of using a temporary file to store results, we can just
+# pipe the otuput of one program into another.
+
+
+who | sort          # print sorted list of users
+who | wc -l         # count users
+ls | wc -l          # count files
+ls | pr -3          # 3 column list of filenames
+who | grep mary     # look for particular user
+
+
+ls | pr -3 | lpr            # create a 3 column list of filenames on the line printer
+who | grep mary | wc -l     # count how many times Mary is logged in
+
+
+
+#------------------------------------------------#
+#                    Processes                   #
+#------------------------------------------------#
+
