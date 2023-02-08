@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exercise #9</title>
+    </head>
+    <body>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Like HTML?</legend>
+                <input type="radio" name="choice" value="Yes">Yes
+                <input type="radio" name="choice" value="No">No
+            </fieldset>
+
+            <div>
+                <label for="age">How old are you?</label>
+                <input type="number" name="age" id="age"
+                    min="13" max="120">
+            </div>
+
+            <div>
+                <label for="fruit">Favorite fruit?</label>
+                <input type="text" name="fruit" id="fruit" list="list1">
+                <datalist id="list1">
+                    <option>Banana</option>
+                    <option>Cherry</option>
+                    <option>Apple</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="email">Email?</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="message">Leave a short message:</label><br>
+                <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </body>
+</html>

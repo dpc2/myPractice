@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms!</title>
+    </head>
+        <form action="newPage.html" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="firstName" name="firstName" required
+                placeholder="First name">
+                <input type="text" id="lastName" name="lastName" required
+                placeholder="Last name">
+            </div>
+
+            <div>
+                <label for="contact">Contact:</label><br>
+                <input type="text" id="contact" name="contact"
+                placeholder="Mobile number or email" length="100">
+            </div>
+
+            <div>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div>
+                Gender?<br>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Non-binary">Non-binary
+                <input type="radio" name="gender" value="No">No
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms!</title>
+    </head>
+        <form action="newPage.html" method="post">
+
+            <fieldset>
+                <legend>Required information:</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="userName" required
+                    placeholder="User name">
+                </div>
+                    
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+    
+                </div>
+    
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Email address">
+                </div>
+
+            </fieldset>
+
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"
+                maxlength="40" placeholder="Your message"></textarea>
+            </div>
+
+            <div>
+                Gender?<br>
+                <input type="radio" name="gender" value="Male">Male<br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Non-binary">Non-binary<br>
+                <input type="radio" name="gender" value="No">No<br>
+            </div>
+
+            <div>
+                Yay or nay?<br>
+                <input type="checkbox" name="TOS" value="yes">        
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+</html>
+
+
+
