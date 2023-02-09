@@ -1,8 +1,38 @@
-p{
-    color: slateblue;
-    font-size: 24px;
+/* ids require use of a # */
+#myh5{
+    color: blueviolet;
+    font-size: 18px;
 }
+.bigFont{
+    font-size: 36px;
+    color: green;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+
+
+
+p{
+    height: 200px;
+}
+
+/*
+
 div{
     color: lightcoral;
     font-size: 18px;
 }
+h3{
+    color: darkorchid;
+}
+h4{
+    color: hotpink;
+}
+h5{
+    color: lightsalmon;
+}
+*/
