@@ -63,4 +63,9 @@ tail +3 poem
 
 
 # cmp - finds the first place where files differ
-cmp poem poen_new
+# Works on any type of file, not just text
+cmp poem poem_new
+
+# diff - much better
+# Only works on text files
+diff poem poem_new

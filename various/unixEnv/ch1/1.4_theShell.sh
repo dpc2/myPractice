@@ -119,3 +119,31 @@ who | grep mary | wc -l     # count how many times Mary is logged in
 #                    Processes                   #
 #------------------------------------------------#
 
+date; who
+
+
+# & can be used to say "and also do this". With this
+# we can start a lengthy command, but do something
+# else while it runs.
+wc ch* >wc.out &
+
+
+# The processes below are started all at once, the &
+# applies to the whole pipeline. But only the last
+# process-id is printed.
+pr test.txt | lpr &
+6951                # Process-id of lpr
+
+
+# 'wait' - waits until all processes started with &
+# are finished.
+wait
+
+
+# 'kill' - self explanatory
+kill 6944
+
+
+# ps - process information
+ps -ag              # List all processes for all users
+kill 0              # Kill all processes except login shell
