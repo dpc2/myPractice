@@ -1,0 +1,16 @@
+li{
+    list-style: none;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+body{
+    background-color: bisque
+}
+div{
+    background-color: aliceblue;
+}
+footer{
+    background-color: darkgray;
+    color: white;
+}

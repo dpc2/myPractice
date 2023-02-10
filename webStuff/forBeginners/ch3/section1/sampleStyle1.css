@@ -3,6 +3,7 @@
     color: blueviolet;
     font-size: 18px;
 }
+/* Classes require use of .class */
 .bigFont{
     font-size: 36px;
     color: green;
