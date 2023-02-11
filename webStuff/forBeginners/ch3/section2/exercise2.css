@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+            body{
+                background-color: bisque;
+            }
+            li{
+                display: inline-block;
+            }
+            li a{
+               display: inline;
+               background-color: red;
+               color: white;
+               text-decoration: none;
+            }
+            .blue{
+                color: blue;
+            }
+            section{
+                background-color: aliceblue;
+            }
+            h1{
+                font-style: bold;
+            }
+            .highlight{
+                background-color: yellow;
+            }
+            .p2{
+                font-family: anton;
+                font-size: 3em;
+                font-style: italic;
+                font-weight: bold;
+                text-shadow: 2px 3px 30px yellow;
+            }
+            .p3{
+                text-align: center;
+            }
+            footer{
+                background-color: grey;
+                color: white;
+            }
