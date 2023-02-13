@@ -147,3 +147,44 @@ kill 6944
 # ps - process information
 ps -ag              # List all processes for all users
 kill 0              # Kill all processes except login shell
+
+
+# no hangup (includes nice automatically)
+nohup command &
+
+
+# run with lower priority
+nice expensive-command &
+
+
+# schedule a command
+at time
+blablabla
+Ctrl-D
+
+
+
+#------------------------------------------------#
+#            Tailoring the Environment           #
+#------------------------------------------------#
+
+# change default erase and kill keys
+stty erase e kill k
+
+# .profile is run every time you log in
+nano .profile
+
+# escaping ^ character since ^ = |
+stty erase '^k'
+
+# Set custom prompt string
+PS1='Yes, dear? '
+
+# MAIL can be set
+MAIL=/usr/spool/mail/danny
+
+# Adding directory to PATH
+PATH=$PATH:/usr/example/
+
+# TERM variable
+echo $TERM
