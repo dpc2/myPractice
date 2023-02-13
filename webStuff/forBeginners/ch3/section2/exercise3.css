@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-color: #3C3176;
+}
+h2{
+    color: #10073B;
+}
+section{
+    background-color: #867DB0;
+    border: 3px dotted white;
+    margin: 5px 0px;
+    padding: 5px 0px 0px 0px;
+    min-height: 300px;
+}
+header{
+    background-color: black;
+}
+.logo{
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 5px 0px 0px 0px;
+}
+nav{
+    text-align: left;
+        
+}
+nav li{
+    list-style: none;
+    background-color: #231858;
+    display: inline-block;
+    color: #FFF;
+    font-family: none;
+    width: 80px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 5px;
+    font-size: 1em;
+}
+img{
+    max-width: 150px;
+    float: right;
+}
+footer{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
