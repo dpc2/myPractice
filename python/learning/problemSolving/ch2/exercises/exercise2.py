@@ -14,6 +14,9 @@ def test_get():
         total_time = time_end - time_start
         print(i, myRand, total_time)
 
+
+
+
 def test_set():
     for i in range(10000, 1000001, 20000):
         myDict = {j:None for j in range(i)}
@@ -25,5 +28,12 @@ def test_set():
         print(i, myRand, total_time)
 
 
-test_get()
-test_set()
+#test_get()
+#est_set()
+
+
+myDict = {i: "Hello! This is entry #{}".format(i) for i in range(1000)}
+print(myDict)
+
+
+
