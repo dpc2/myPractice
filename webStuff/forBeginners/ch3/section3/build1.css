@@ -1,0 +1,110 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+body{
+    background-color: lightskyblue;
+    color: black;
+    font-family: Kanit;
+}
+#wrapper{
+    width: 80%;
+    margin: 10%;
+    border: 1px dotted black;
+}
+
+#info img, #info h1, #info h2{
+    display:inline-block;
+}
+#info img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#info h1{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+#info h2{
+    color: #333;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+#banner{
+    background: url('galaga.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+}
+#bannerText{
+    position: absolute; 
+    top: 10%;
+    background-color: red;
+    right: 5%;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.2em;
+}
+
+
+
+nav{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    background-color: lightblue;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+
+}
+nav a:hover{
+    color: aqua;
+    border-bottom: 3px solid lightgreen;
+    border-top: 3px solid lightgreen;
+}
+
+
+section article, section aside{
+    /* display: inline-block; */
+}
+section article{
+    /* width: 65%; */
+    float: left;
+    width: 65%;
+    margin: 0;
+}
+section article img{
+    max-width: 50%
+}
+section aside{
+    /* width: 32%; */
+    float: right;
+    width: 34%;
+    margin: 0;
+}
+footer{
+    clear: both;
+    background: #ddd;
+}
+footer div{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    text-align: center;
+}
+footer h3{
+    text-decoration: underline;
+}
+footer li{
+    list-style-type: none;
+}
