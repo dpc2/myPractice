@@ -7,7 +7,7 @@ console.dir(el1[0]);
 
 tempEl.style.backgroundColor = "Green";
 tempEl.style.color = "white";
-tempEl.style.border = "5px dotted purple";
+tempEl.style.border = "10px dotted purple";
 tempEl.style.fontSize = "40px";
 tempEl.style.display = "none";
 tempEl.style.display = "block";
