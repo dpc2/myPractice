@@ -1,0 +1,21 @@
+{
+    "firstName": "Danny",
+    "lastName": "C",
+    "age": 31,
+    "address": {
+        "streetAddress": "123 Apples Lane",
+        "city": "Someplace",
+        "state": "Colorado",
+        "postCode": 80258
+    },
+    "phoneNumber": [
+        {
+            "type": "cell",
+            "number": "123 456-7890"
+        },
+        {
+            "type": "home",
+            "number": "098 765-4321"
+        }
+    ]
+}
