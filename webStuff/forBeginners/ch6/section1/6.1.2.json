@@ -17,5 +17,6 @@
             "type": "home",
             "number": "098 765-4321"
         }
-    ]
+    ],
+    "gender": {"type": "male"}
 }
