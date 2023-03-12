@@ -18,9 +18,18 @@ var myJSON = {"car1": "black", "car2": "blue"};
 console.log(myJSON);
 
 
+
+// Challenge
+
 var output1 = document.getElementById('output1');
 var output2 = document.getElementById('output2');
-var myObj = {"firstName": "Danny", "lastName": "C", "age": 31};
+
+var myObj = {
+    "firstName": "Danny",
+    "lastName": "C",
+    "age": 31
+};
+
 console.log(myObj);
 
 output1.innerHTML = myObj.firstName;
