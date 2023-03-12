@@ -41,3 +41,28 @@ ls -ld .
 # You cannot write to a directory
 who >.
 # bash: .: Is a directory
+
+
+# rm permissions are based on the directory the file is contained in
+rm temp3
+
+# For directories, --x is searching, not executing.
+
+# chmod: 4: read, 2: write, 1: execute
+chmod 666 temp3
+
+# Turn on execution
+chmod +x myCommand
+# Turn off write permissions
+chmod -w myFile
+
+# Removing write permissions from directory ensures files are not deleted
+cd
+date >temp
+chmod -w .
+ls -ld .
+rm temp
+chmod +w .
+rm temp
+
+# permissions and modicition dates are stored in something called i-nodes
