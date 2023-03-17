@@ -3,6 +3,10 @@
 with various tutorials and textbooks.</p>
 <h2>Matlab/Octave</h2>
 	<ul>Hack Audio - Eric Tarr</ul>
+<h2>Rust</h2>
+	<ul>
+		<li>Programming Rust: Fast, Safe Systems Development - Jim Blandy, Jason Orendorff, Leonora F.S. Tindall</li>
+	</ul>
 <h2>Python</h2>
 	<ul>
 	<li>The Self Taught Programmer - Cory Althoff</li>
