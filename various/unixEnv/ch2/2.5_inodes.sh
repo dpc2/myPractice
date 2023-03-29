@@ -40,3 +40,7 @@ ls -li
 cp junk copyofJunk
 chmod -w copyofJunk
 rm copyofJunk
+
+
+# mv shuffles links around
+mv junk sameoldjunk
