@@ -28,3 +28,23 @@ date ; troff -me verylargedocument | lpr ; date
 # mail could be used to notify the user once a large command
 # completes
 mail -s "Finished the long command" burner.solo59@gmail.com
+
+
+#--- Background commands ---#
+troff -me myVeryLargeDocument | lpr &
+
+
+#--- Expanding commands ---#
+# Command substition: $(command) and `command`
+nano $(find /home | grep burner)
+nano `find /home | grep burner`
+
+
+#--- Expanding arithmetic expressions ---#
+echo "I am $[2023 - 1991] years old."
+echo "There are $(ls | wc -w) files in this directory."
+
+
+#--- Expanding variables ---#
+ls -l $BASH
+
