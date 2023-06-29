@@ -1,0 +1,8 @@
+#---  Customizing bash prompt ===#
+PS1="[\t][\u@\h:\W]\$ "
+
+# Blue text, color runs over into commands
+PS1="\[\033[34m\][\$(date +%H%M)][\u@\h:\W]$ "
+
+# Brighter blue, color reverts back for commands
+PS1="\[\033[1;34m\][\$(date +%H%M)][\u@\h:\w]$\[\033[0m\] "
