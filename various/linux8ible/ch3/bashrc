@@ -6,3 +6,14 @@ PS1="\[\033[34m\][\$(date +%H%M)][\u@\h:\W]$ "
 
 # Brighter blue, color reverts back for commands
 PS1="\[\033[1;34m\][\$(date +%H%M)][\u@\h:\w]$\[\033[0m\] "
+
+# Terminal timeout
+TMOUT=30
+
+# Editing/adding to the end of PATH
+PATH=$PATH:/getstuff/bin ; export PATH
+# NOT recommended
+PATH=.:$PATH ; export PATH
+
+# Custom env variable
+C=/home/danny/code ; export C

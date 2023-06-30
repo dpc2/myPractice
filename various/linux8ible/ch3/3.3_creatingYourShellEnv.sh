@@ -15,4 +15,10 @@
 ~/.bashrc
 ~/.bash_logout
 
-1991
+
+#--- Setting your prompt ---#
+PS1="\[\033[1;36m\][\$(date +%H%M)][\u@\h]:\[\033[1;32m\]\w\[\033[m\]$ "
+
+
+#--- Adding environment variables ---#
+TMOUT=30	# Close terminals after 30 seconds
