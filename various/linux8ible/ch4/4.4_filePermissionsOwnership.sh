@@ -25,6 +25,7 @@ ls -l
 ls -ld test/
 
 
+
 #--- Changing permissions with chmod (numbers) ---#
 # r=4, w=2, x=1
 
@@ -37,5 +38,33 @@ chmod 000 file
 chmod -R 755 $HOME/myapps
 
 
-#--- Changing permissions with chmod (letters) ---#
 
+#--- Changing permissions with chmod (letters) ---#
+# With letters you can change permissions for:
+# u: user
+# g: group
+# o: other
+# a: all users
+
+touch myFile
+chmod 777 myFile
+chmod a-w myFile	# r-xr-xr-x
+chmod o-x myFile	# rwxrwxrx-
+chmod go-rwx		# rwx------
+
+touch otherFile
+chmod 000 otherFile
+chmod u+rw otherFile	# rw-------
+chmod a+x otherFile	# --x--x--x
+chmod ug+rx otherFile	# r-xr-x---
+
+
+# Using letters to change permissions recursively generally
+# works better than using numbers, because you can change
+# bits selectively
+
+chmod -R o-w $HOME/myapps
+
+
+
+#--- Setting default permission with umask ---#
