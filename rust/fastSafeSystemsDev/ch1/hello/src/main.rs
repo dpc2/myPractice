@@ -1,11 +1,23 @@
+// Brings standard library trait FromStr into scope
+// "trait": collection of methods that types can implement
 use std::str::FromStr;
+// Bring in the std::env module
 use std::env;
 
 fn main() {
 	//println!("Hello, world!");
+
+	// Declare a mutable local variable and initialize it to
+	// an empty vector (similar to C++: std::vector,
+	// Python: list, JavaScript: array)
 	let mut numbers = Vec::new();
 
+	//println!(env::args());
+	// .skip(1) because the first value returned by args iterator
+	// is the name of the program being run
+
 	for arg in env::args().skip(1) {
+		//println!(arg);
 		numbers.push(u64::from_str(&arg)
 			.expect("error parsing argument"));
 	}
@@ -20,7 +32,7 @@ fn main() {
 		d = gcd(d, *m);
 	}
 
-	println("The greatest common divisor of {:?} is {}",
+	println!("The greatest common divisor of {:?} is {}",
 		numbers, d);
 }
 

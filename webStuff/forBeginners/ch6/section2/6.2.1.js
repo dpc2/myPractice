@@ -12,6 +12,7 @@ fetch(url).then(response=>{
     //     console.log(person);
     //     output.innerHTML += person.first + " " + person.last + "<br>";
     // }
+    
     data.results.forEach(function(person){
         console.log(person);
         var temp = person.name;
