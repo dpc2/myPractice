@@ -15,8 +15,10 @@ PS1="\[$(tput setaf 15)\]\[$(tput setab 0)\][\h][\w]$ \[$(tput setaf 11)\]\[$(tp
 #--- 3 ---#
 # Find mount
 ls /bin | grep mount
+type mount
 # Find tracepath man page
 man -k tracepath
+locate tracepath
 
 
 #--- 4 ---#
@@ -56,4 +58,5 @@ alias mypass="cat /etc/passwd"
 
 
 #--- 10 ---#
-man mount
+man -k mount | grep ^mount
+
