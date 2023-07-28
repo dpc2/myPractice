@@ -101,3 +101,69 @@ find /etc/ -mmin -10
 # want to check if any commands had their ownership or
 # permissions changed:
 find /bin /usr/bin /sbn /usr/sbin -ctime -3
+
+# You want to find files in your FTP server or web server
+# that have not been accessed in 300+ days
+find /var/ftp /var/www -atime +300
+
+# -atime, -ctime, -mtime: days since accessed, changed,
+# or had metadata changed
+# -amin, -cmin, -mmin: same thing in minutes
+
+
+# Using not and or when finding files
+# Search shared directory for files owned by joe or chris
+find /var/allusers \( -user joe -o -user chris \) -ls
+
+# Search for files owned by joe, but not in the group joe
+find /var/allusers -user joe -not -group joe -ls
+
+# Search for files owned by joe and also 1MB+ in size
+find /var/allusers -user joe -and -size +1M -ls
+
+
+
+# Finding files and executing commands
+find [options] -exec command {} \;
+find [options] -ok command {} \;
+
+# Find any file named passwd under /etc and include that
+# name in the output of an echo command:
+find /etc -iname passwd -exec echo "I found {}" \;
+
+# Find every file under /usr/share that is +5MB. Display
+# size of each file with du, sort the output from largest
+# to smallest
+find /usr/share -size +5M -exec du {} \; | sort -nr
+
+# Find all files that belong to joe in a shared folder
+# and its sub directories, move them to /tmp/joe with
+# confirmation
+find /var/allusers -user joe -ok mv {} /tmp/joe/ \;
+
+
+
+#--- Searching in files with grep ---#
+# With grep you can search a single file or whole
+# directory structure of files recursively.
+# You can also use grep to search standard output.
+
+# Find text strings in one or more files:
+grep desktop /etc/services
+# Case insensitive
+grep -i desktop /etc/services
+
+# Searching for lines that don't contain a string
+grep -vi tcp /etc/services
+
+# Searching a directory recursively for files containing
+# a certain string, and listing the files
+grep -rli peerdns /usr/share/doc/
+
+# Recursively searching, returning each line of each file
+# containing the text, with color
+grep -ri --color root /etc/sysconfig/
+
+# Searching the output of a command using the pipe symbol
+ip addr show | grep inet
+
