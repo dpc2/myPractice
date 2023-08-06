@@ -22,3 +22,5 @@ rm junk
 
 
 # Exercise 2-8
+# cp doesn't copy subdirectories, only files at the first level of a hierarchy
+# Unsure if cp -r existed back in the day, this question may not be relevant
