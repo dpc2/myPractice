@@ -16,7 +16,14 @@ void printTripleNumber(int number){
     std::cout << tripleNumber(number) << std::endl;    
 }
 
+int a;
+
 int main(){
+
+    int number;
+    int b;
+    b = 4;
+    a = 2;
 
     sayHello("Huey", 3);
     sayHello("Dewey", 4);
@@ -26,6 +33,14 @@ int main(){
     std::cout << result << std::endl;
 
     printTripleNumber(4);
+
+    {
+        a = 4;
+        b = 5;
+        int c;
+    }
+
+    c = 3;
 
     return 0;
 }
