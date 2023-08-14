@@ -26,6 +26,7 @@ int main()
 
     temperatures.push_back(17.4);
     cout << temperatures.size() << endl;
+    cout << temperatures[3] << endl;
         
     return 0;
 }
