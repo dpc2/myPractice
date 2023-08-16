@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <numeric>
 
 using namespace std;
 
@@ -22,13 +23,21 @@ int add_integers(int number_1, int number_2)
 double myAverage(vector<double> myVector){
     // int mySize = myVector.size();
     // cout << mySize << endl;
+
+    // double sum = accumulate(myVector.begin(), myVector.end(), 0.0);
+
     double result;
     for(int i = 0; i < myVector.size(); i++){
         result += myVector[i];
     }
+
     return result / myVector.size();
 }
 
+double C_to_F(double celsius){
+        return (celsius * 1.8) + 32.0; 
+}
+ 
 
 int main()
 {
@@ -59,4 +68,11 @@ int main()
     }
 
     cout << myAverage(myVector) << endl;
+
+
+    // Exercise 4
+    double myTemp;
+    cout << "Enter a temperature in Celsius:\n";
+    cin >> myTemp;
+    cout << to_string(myTemp) + "C" << " = " << to_string(C_to_F(myTemp)) + "F" << endl;
 }
