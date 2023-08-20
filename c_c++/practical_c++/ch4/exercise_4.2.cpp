@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 double max_value(vector<double> input_vector){
 
     double my_max;
@@ -14,14 +13,23 @@ double max_value(vector<double> input_vector){
         }
     }
 
+    cout << "The max value in this list is...\n";
+
     return my_max;
 }
 
 int main(){
+    
+    vector<double> my_list;
 
-    vector<double> temperature_list = { 12.3, -4.5, 12.4, 11.7, -0.4 };
+    double myEntry;
 
-    cout << "The max value is...\n" << max_value(temperature_list) << endl;
+    for (int i=0; i<5; i++){
+        cout << "Please enter a number: ";
+        cin >> myEntry;    
+        my_list.push_back(myEntry);
+    }
 
+    cout << max_value(my_list) << endl;
     return 0;
 }
