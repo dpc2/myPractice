@@ -17,8 +17,7 @@ void add_zeroes_reference(vector<int> &myList, int num_of_zeroes){
     cout << "(In function): Size of my list: " << myList.size() << endl;
 }
 
-// Passing vectory by reference, but protecting it with const
-// so it can't be modified
+// Passing vectory by reference, but protecting it with const so it can't be modified
 void print_all_elements(const vector<int> &myList){
     for (int number: myList){
         cout << number << endl;
@@ -34,7 +33,7 @@ int main(){
     add_zeroes_copy(myList, 4);
     cout << "Size of my list (passed as copy): " << myList.size() << endl;
 
-add_zeroes_reference(myList, 4);
+    add_zeroes_reference(myList, 4);
     cout << "Size of my new list (passed as reference): " << myList.size() << endl;
 
     return 0;
