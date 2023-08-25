@@ -1,0 +1,18 @@
+Class for a robot
+
+Attributes (variables):
+- Name
+- Version number
+- Temperature
+- Etc
+
+Functionality (functions):
+- Say hello
+- Print inernal info
+- Initialize hardware
+- Etc
+
+In OOP:
+Robot = Class name
+Variable = Attributes
+Functions = Methods
