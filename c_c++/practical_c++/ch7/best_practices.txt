@@ -1,0 +1,17 @@
+Best Practices with C++
+
+- Respect naming conventions
+- Give meaningful names to variables, functions, classes, etc.
+- Use the std library if possible
+- Don't repeat yourself
+- Keep things simple!
+- Use search engines
+
+Application domains:
+- Video games
+- Embedded software
+- Robotics
+- AI
+- OSes
+
+- Focus on projects and practicing
