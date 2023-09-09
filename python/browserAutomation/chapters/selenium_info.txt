@@ -1,0 +1,13 @@
+Selenium WebDriver
+Selenium Grid
+Selenium IDE
+
+We need a webdriver (not Selenium WebDriver). It's a piece of logic that sits between code and the thing
+you want to automate.
+
+geckodriver, ChromeDriver, SafariDriver...
+
+Selenium does not maintain these drivers anymore. The webdrivers are maintained by browser makers.
+Selenium 2 used to bundle the webdrivers in, but that's not the case with Selenium 3.
+
+https://seleniumhq.github.io/selenium/docs/api/py/api.html
