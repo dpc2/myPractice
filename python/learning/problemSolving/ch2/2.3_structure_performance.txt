@@ -1,8 +1,0 @@
-#------------------------------------------------#
-#              2.3 - Performance of              #
-#             Python Data Structures             #
-#------------------------------------------------#
-
-# It's important to understand the efficiency of Python
-# lists and dictionaries because they are the building
-# blocks used to implement other data structures later.
