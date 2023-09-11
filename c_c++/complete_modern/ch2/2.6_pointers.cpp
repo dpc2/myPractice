@@ -4,37 +4,45 @@ using namespace std;
 
 int main(){
     int x{10};
-    cout << &x << endl;
+    cout << "Variable x: " + to_string(x) << endl;
+    cout << "&x:\n" << &x << endl << endl;
 
-    // float *pointer = &x;
+    //float *pointer = &x;  //Can't mismatch pointer type with variable type
     int *pointer = &x;
-    cout << pointer << endl;
+    cout << "Printing out pointer:\n" << pointer << endl;
+    cout << "Printing out *pointer:\n" << *pointer << endl << endl;
 
     void *pointer2 = &x;    // void pointers are agnostic
-    cout << pointer2 << endl;
+    cout << "Void pointer:\n" << pointer2 << endl << endl;
 
     // Uninitialized pointers point to random addresses
-    // if they compile at all
+    // if they compile at all. Now it's just 0?
     void *pointer3;    
-    cout << pointer3 << endl;
+    cout << "Uninitialized pointer:\n" << pointer3 << "\n\n";
 
 
     // Using dereference operator to indirectly change the value
     // of the variable
     *pointer = 20;
-    cout << x << endl;
+    cout << "New value for x:\n" << x << endl;
+    cout << "Printing out &x:\n" << &x << endl;
+    cout << "Printing out pointer:\n" << pointer << endl;
+    cout << "Printing out &pointer:\n" << &pointer << endl;
+    cout << "Printing out *pointer:\n" << *pointer << endl << endl;
 
     int y = *pointer;
     cout << y << endl;
 
 
-    // Null Pointer
+    // Null Pointers
     void *pointer4 = nullptr;
-    cout << pointer4 << endl;
+    cout << pointer4 << endl << endl;
 
     int *pointer5 = nullptr;
-    cout << pointer5 << endl;
-    *pointer5 = 10;    // This causes core dump
+    cout << "pointer5:\n" << pointer5 << endl;
+    cout << "&pointer5:\n" << &pointer5 << endl;
+    cout << "*pointer:\n" << *pointer5 << endl; // This causes core dump
+    //*pointer5 = 10;    // This causes core dump
 
 
     return 0;
