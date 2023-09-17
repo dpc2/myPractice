@@ -34,6 +34,7 @@ with various tutorials and textbooks.</p>
 			</ul>
 		</ul>
 	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
+	<li>Browser Automation with Python and Selenium - Brandon Blair</li>
 	</ul>
 
 <h2>Rust</h2>
