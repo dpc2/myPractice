@@ -1,8 +1,0 @@
-# Test searching logic
-pytest -m "body or engine"
-pytest -m "not entertainment"
-pytest -m "body and door"
-
-pytest --markers
-# Help
-pytest -h
