@@ -1,6 +1,10 @@
 # Install commands
 pip install pytest
 pip install pytest-xdist
+# Installing test_titlecase
+pip install .
+# Extended install
+pip install -e .
 
 pytest -m smoke
 pytest -m body
@@ -24,3 +28,6 @@ pytest -s
 # Run parallel tests
 pytest -v -s -n4
 pytest -v -s -nauto
+
+# Workaround for importing unit test module
+python -m pytest tests      # From upper level directory
