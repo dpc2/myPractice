@@ -5,3 +5,4 @@
 	<li><a href="https://docs.pytest.org/en/latest/skipping.html">Skipping</a></li>
 	<li><a href="https://docs.pytest.org/en/latest/parametrize.html">Parametrize</a></li>
 </ul>
+<a href="https://tox.readthedocs.io/en/latest">Tox</a>
