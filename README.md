@@ -5,8 +5,7 @@ with various tutorials and textbooks.</p>
 
 <h2>C++</h2>
 	<ul>
-		<li>Practical C++ - Edouard Renard</li>
-		<li>AM2303 example code</li>
+		<li><s>Practical C++ - Edouard Renard</s></li>
 	</ul>
 
 <h2>HTML, CSS, JavaScript</h2>
@@ -20,10 +19,10 @@ with various tutorials and textbooks.</p>
 
 <h2>Python</h2>
 	<ul>
-	<li>The Self Taught Programmer - Cory Althoff</li>
+	<li><s>The Self Taught Programmer - Cory Althoff</s></li>
 		<ul>
-		<li>Chapter 10 - Software Hangman game</li>
-		<li>Chapter 15 - War card game</li>
+		<li>Software Hangman game</li>
+		<li>War card game</li>
 		</ul>
 	<li>Problem Solving with Algorithms and Data Structures - Brad Miller/David Ranum</li>
 		<ul>
@@ -33,7 +32,7 @@ with various tutorials and textbooks.</p>
 			<li>Auto Go Fish game</li>
 			</ul>
 		</ul>
-	<li>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</li>
+	<li><s>Elegant Automation Frameworks with Python and Pytest - Brandon Blair</s></li>
 	<li>Browser Automation with Python and Selenium - Brandon Blair</li>
 	</ul>
 
