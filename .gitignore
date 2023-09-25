@@ -1,3 +1,8 @@
+*.csproj
+bin/
+obj/
+.idea/
+*.iml
 ..gitignore.swp
 bash/sleepScript/
 webStuff/forBeginners/ch3/rose.png
