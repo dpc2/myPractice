@@ -1,0 +1,12 @@
+# Special characters in bash
+
+~ home directory
+` command substitution
+# comment
+$ variable expression
+& background job
+* string wildcard
+( start subshell
+) end subshell
+\ quote next character
+
