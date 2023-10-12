@@ -9,6 +9,7 @@ echo $1
 
 # Using [[ ]] to check for specific pattern
 [[ $1=='[a-z]*' ]] || echo $1 does not start with a letter
+# This doesn't work for some reason?
 
 exit 0
 
