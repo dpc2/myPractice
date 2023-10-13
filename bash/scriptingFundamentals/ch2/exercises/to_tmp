@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# This script copies all files which are provided as arguments
+# to the user's home directory. If no files are provided, the
+# script uses read to ask for file names, then proceeds.
+
+if [ -z $1 ]
+then 
+	echo Provide some filenames:
+	read FILENAMES
+else
+	echo \$* is $*
+	echo \$@ is $@
+	FILENAMES="$*"
+fi
+
+echo The following filenames have been provided: $FILENAMES
+
+for i in "$FILENAMES"
+do
+	cp $i ~
+done
+
+exit 0
+
