@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Demoing substitution commands
+
+DATE=
+echo $DATE
+
+echo '${DATE:-today}:'
+echo ${DATE:-today}
+echo 'echo $DATE:'
+echo $DATE
+
+echo 'echo ${DATE:=today}:'
+echo ${DATE:=today}
+echo 'echo $DATE:'
+echo $DATE
+
+echo ----------------------
+
+DATE=
+
+DATE=$(date +%d-%m-%y)
+echo $DATE
+echo the day is ${DATE:0:2}
+
+DATE=
+echo ${DATE:?variable not set}
+echo $DATE
+
