@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Example of defining variables
+
+echo $COLOR
+# No value
+
+COLOR=blue
+echo $COLOR
+# prints 'blue'
+
+# To make variable available in subshells:
+export COLOR=red
+
+exit 0
+

@@ -1,0 +1,24 @@
+# Special characters in bash
+
+~ home directory
+` command substitution
+# comment
+$ variable expression
+& background job
+* string wildcard
+( start subshell
+) end subshell
+\ quote next character
+| pipe
+[ start character set wildcard
+] end character set wildcard
+{ start command block
+} end command block
+; shell command separator
+' strong quote
+" weak quote
+< input redirect
+> output redirect
+/ pathname directory separator
+? single character wildcard
+

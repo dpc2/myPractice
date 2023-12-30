@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# ${VAR#pattern}: Search for pattern from the beginning of variable's
+# value, delete the shortest part that matches, return the rest
+
+FILENAME='/usr/bin/blah'
+echo ${FILENAME#*/}
+#/usr/bin/blah
+
+
+# ${VAR##pattern}: Search for pattern from beginning, delete the longest
+# part that matches, return the rest
+
+FILENAME='/usr/bin/blah'
+echo ${FILENAME##*/}
+#blah
+
+
+# ${VAR%pattern}: If pattern matches the end of the variable's value,
+# delete the shortest part that matches, return the rest
+FILENAME='/usr/bin/blah'
+echo ${FILENAME%/*}
+# /usr/bin
+
+
+# ${VAR%%pattern}: If pattern matches the end of the variable's value,
+# delete the longest part that matches, return the rest
+FILENAME='/usr/bin/bash'
+echo ${FILENAME%%/*}
+#
+
